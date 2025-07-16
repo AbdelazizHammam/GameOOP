@@ -7,6 +7,7 @@ let permadeath = document.querySelector("#permadeath");
 let superhero = document.querySelector("#superhero");
 let pixel = document.querySelector("#pixel");
 let loading = document.querySelector(".loading");
+let links = document.querySelectorAll(".nav-link");
 
 
       class Api {
@@ -125,4 +126,21 @@ let closeBtn = document.querySelector("#closeBtn");
   closeBtn.addEventListener("click", function () {
         games.classList.remove("d-none");
         details.classList.add("d-none");
-      });
+  });
+      
+
+
+for (const link of links) {
+  link.addEventListener("click", function () {
+    
+    for (let i = 0; i < links.length; i++) {
+      
+
+      links[i].classList.remove("active")
+    }
+this.classList.add("active")
+
+
+
+  })
+}
