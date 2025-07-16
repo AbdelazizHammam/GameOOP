@@ -1,0 +1,145 @@
+
+
+body{
+    background-color: #272B30;
+   font-family: "Nerko One", cursive;
+  
+ 
+}
+
+nav{
+    width: 70%;
+    left: 15%;
+    background-color: #3A497B;
+}
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+.container .navbar-brand img{
+    max-width: 40px;
+}
+.container .navbar-brand {
+    font-family: "Nerko One" cursive;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 17.25px;
+    color: #FFF;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #FFF;
+}
+
+
+
+
+
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+.nav-item .nav-link.active, .nav-item .nav-link:focus {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+.card{
+    font-family: "Comfortaa", sans-serif;
+
+    padding: 1rem;
+    background-color: #272B30;
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+.card:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.header-info span{
+    font-size: 12px;
+    font-weight: 700;
+}
+.card-text{
+    color: #FFFFFF
+;
+}
+.card-title{
+    color: #FFFFFF;
+}
+
+.card-footer span{
+    background-color: #32383e;
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  /* width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite; */
+
+.loader {
+         width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+  border-top: 4px solid #FFF;
+
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+      }
+      .loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+.card{
+    cursor: pointer;
+}
+
+#headerDetails{
+   font-family: "Nerko One", cursive !important;
+
+        font-weight: 500;
+    font-size: 28px;
+}
